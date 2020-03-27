@@ -1,6 +1,6 @@
 
 <html>
-@extends('layouts/boot')
+
 @extends('layouts/main')
 </html>
 <body>

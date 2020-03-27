@@ -17,13 +17,32 @@ Route::get('/', function () {
 */
 
 
-Route::get('/', 'HomeController@index');
+/*Route::get('/', 'HomeController@index');*/
+
+Route::get('/',[
+    'as'=> 'root_path',
+    'uses' => 'HomeController@index'
+]);
+
 Route::get('articles', 'ArticlesController@article');
 
 
 Route::get('/articles/{post_name}', 'PostsController@show');
-Route::post('contact', ['uses' => 'EmailController@postForm', 'as' => 'storeEmail']);
-Route::get('contact', 'EmailController@getForm');
+/*Route::post('contact', ['uses' => 'EmailController@postForm', 'as' => 'storeEmail']);
+Route::get('contact', 'EmailController@getForm');*/
+
+
+Route::get('/about',[
+    'as'=> 'about_path',
+    'uses' => 'PagesController@about'
+]);
+
+Route::get('/contact',[
+    'as'=> 'contact_path',
+    //por respecter les convention REST
+    'uses' => 'ContactsController@create'
+]);
+
 
    
 

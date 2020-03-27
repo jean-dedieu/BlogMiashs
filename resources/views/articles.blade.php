@@ -18,7 +18,7 @@
 
       
         
-        <li class="list-group-item list-group-item-primary"> <a href="{{ url('http://localhost/miashsBlog/public/articles/'.$post->post_name) }}" >{{$post->post_title}}</a>
+        <li class="list-group-item list-group-item-primary"> <a href="{{ url('http://127.0.0.1:8000/articles/'.$post->post_name) }}" >{{$post->post_title}}</a>
     
         </li>
      

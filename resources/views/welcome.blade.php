@@ -1,4 +1,4 @@
-@extends('layouts/main')
+@extends('layouts/main',['title'=> 'Home'])
 
 @section('content')
 
@@ -8,7 +8,7 @@
     
          @foreach ( $posts as $post )
     
-       <li> <a  href="{{ url('http://localhost/miashsBlog/public/articles/'.$post->post_name) }}" >{{$post->post_title}} </a>
+       <li> <a  href="{{ url('http://127.0.0.1:8000/articles/'.$post->post_name) }}" >{{$post->post_title}} </a>
     
 
        </li>

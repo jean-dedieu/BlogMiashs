@@ -1,0 +1,107 @@
+[33mcommit 5d8f8dad0b2a808ffd212624444cbd32d1a7bf27[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jean de Dieu  TWAGIRUMUHOZA <jeandedieutwagirumuhoza@iMac-de-Jean.local>
+Date:   Sun Mar 29 04:11:46 2020 +0200
+
+    creation de mail avec mailable et le passage des variable et la route pour ContactsMessageCreated
+
+[33mcommit 5c6ef90d98f815998b9c4c0b565e817837cee0b0[m
+Author: Jean de Dieu  TWAGIRUMUHOZA <jeandedieutwagirumuhoza@iMac-de-Jean.local>
+Date:   Sun Mar 29 03:35:02 2020 +0200
+
+    mise a jour  resources/views/layouts/contacts/create.blade.php
+
+[33mcommit 8b4bbb57659153b9341b91a7fc792b509fe12f49[m
+Author: Jean de Dieu  TWAGIRUMUHOZA <jeandedieutwagirumuhoza@iMac-de-Jean.local>
+Date:   Sun Mar 29 03:26:39 2020 +0200
+
+    mise a jour de la nav et validation de formulaire de contacts
+
+[33mcommit f3195f363567fbd80cdc9e73bdb3677e58bf7663[m
+Author: Jean de Dieu  TWAGIRUMUHOZA <jeandedieutwagirumuhoza@iMac-de-Jean.local>
+Date:   Sun Mar 29 03:25:14 2020 +0200
+
+    ajout de la route pour le formulaire de contacts
+
+[33mcommit 7efb92f6e41e3c7de479928c11ae81c7f70aaa02[m
+Author: Jean de Dieu  TWAGIRUMUHOZA <jeandedieutwagirumuhoza@iMac-de-Jean.local>
+Date:   Sun Mar 29 03:23:55 2020 +0200
+
+    ajout de la path contact_path
+
+[33mcommit dbf08615932b7e217d8c1e7d3f733e3a57bdf5c5[m
+Author: Jean de Dieu  TWAGIRUMUHOZA <jeandedieutwagirumuhoza@iMac-de-Jean.local>
+Date:   Sun Mar 29 03:22:50 2020 +0200
+
+    creation de la methode store pour le message
+
+[33mcommit 9c0bbd284d11d26a317ff6ed2760f459b7a1a7f7[m
+Author: Jean de Dieu  TWAGIRUMUHOZA <jeandedieutwagirumuhoza@iMac-de-Jean.local>
+Date:   Sun Mar 29 01:00:18 2020 +0100
+
+    package json
+
+[33mcommit 6f7869f77f49675cacd9f3316b10a3a8e56ceaae[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 14:28:10 2020 +0100
+
+    mise a jour _footer
+
+[33mcommit 5c66535125b1a5b6a0851916ca3aa8185b90c4b7[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 14:26:13 2020 +0100
+
+    creation de formulaire de contacts
+
+[33mcommit fcb664716a888782a0a16762e7570e3c7afad0ac[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 14:25:16 2020 +0100
+
+    Creation de PagesController qui gerera Qui sommes-nous et autres pages statiques
+
+[33mcommit 0cf33f364db76eb08d15b10125ed079abf16beb8[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 14:23:25 2020 +0100
+
+    Creation controller ContactsController qui gerera notre formulaire de contacts
+
+[33mcommit 5b0cc8bcc68928866f7311da078b295cad5f7bfa[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 14:21:22 2020 +0100
+
+    Creation de dossier pages qui est utilise par PagesController
+
+[33mcommit 1ab546b14bec2efa9716a442603b5ccb918149c2[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 14:19:31 2020 +0100
+
+    ajout des routes pour contacts about et accueil
+
+[33mcommit 685431f005abe39f5cbe0db4a4d4c2f25acd15a1[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 14:17:44 2020 +0100
+
+    mise àa jour _nav  contacts
+
+[33mcommit 898c0be9804a49def846f1304e5e44587d81ecb2[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 14:15:15 2020 +0100
+
+    inclure le partial _footer dans le main é
+
+[33mcommit 0bc951b767beb4a7ee8a6bf845cbe0e238575286[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Fri Mar 27 13:18:26 2020 +0100
+
+    ajout de dossier partials et le fichier _nav
+
+[33mcommit 55b8781beadf749832e830ae3352a66f09e262b0[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Thu Mar 26 20:51:09 2020 +0100
+
+    renomméer le fichier database au  nom phpLiteLiteAdmin.php
+
+[33mcommit ba1740a9a142448e674c200035c173cbcb79b1a3[m
+Author: Jean de Dieu TWAGIRUMUHOZA <jeandedieu.emploi@gmail.com>
+Date:   Tue Mar 17 14:59:37 2020 +0100
+
+    premier commit vers la fin TP2

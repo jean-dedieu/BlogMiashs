@@ -12,8 +12,9 @@
        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1>">
            <h2>Restons en contact <i class="far fa-smile-wink"></i></h2><br>
 
-           <form action="{{ route('contact_path')}}" method="GET">
-                  {{ csrf_field()}}
+          
+              <form method="POST" action="{{route('contact_path')}}">
+                  {{csrf_field()}}
 
                 <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
 
@@ -30,7 +31,7 @@
                       <div class="form-group">
 
                        <label for="message" class="control-label" sr-only>Votre message</label><br>
-                       <input type="textarea" class="form-control" rows="20" cols="30" name="message" id="message" required="required" >
+                       <input type="textarea" class="form-control" rows="20" cols="30" name="msg" id="msg" required="required" >
                        {!! $errors->first('message', '<span class="help-block">:message</span>')!!}
 
                    </div>

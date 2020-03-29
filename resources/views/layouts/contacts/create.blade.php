@@ -12,7 +12,7 @@
        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1>">
            <h2>Restons en contact <i class="far fa-smile-wink"></i></h2><br>
 
-           <form action="{{ route('contact_path')}}" method="POST">
+           <form action="{{ route('contact_path')}}" method="GET">
                   {{ csrf_field()}}
 
                 <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">

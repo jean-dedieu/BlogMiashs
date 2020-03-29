@@ -3,7 +3,7 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Contacts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
@@ -11,14 +11,24 @@ class ContactsMessageCreated extends Mailable
 {
     use Queueable, SerializesModels;
 
+    //création de nos variables globales de message
+
+    public $name;
+    public $email;
+    public $msg;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($name, $email, $msg)
     {
-        //
+        //Passage des variables à la vue
+
+        $this->name = $name;
+        $this->email = $email;
+        $this->msg = $msg;
     }
 
     /**
@@ -28,14 +38,6 @@ class ContactsMessageCreated extends Mailable
      */
     public function build()
     {
-        //on précise ici la vue qui sera utilisé pour notre mail
-        return $this->view('layouts.emails.messages.created')
-        //on passe des variables à notre message
-        ->with([
-            'name' => 'Jean de Dieu',
-            'email' => 'jeandedieu.twagirumuhoza@gmail.com',
-            'msg' => 'Votre joli message',
-
-        ]);
+        return $this->markdown('emails.messages.created');
     }
 }

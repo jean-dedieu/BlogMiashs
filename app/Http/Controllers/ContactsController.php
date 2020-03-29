@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactsMessageCreated;
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactRequest;
+use Illuminate\Support\Facades\Mail;
 
 class ContactsController extends Controller
 {
@@ -17,19 +20,21 @@ class ContactsController extends Controller
 
     public function store(Request $request){
 
-        //store(Request $request)
+          //dd('toto');
+         //die and dump pour tester
 
+        //pour envoyer notre mail
+        $mailable = new ContactsMessageCreated($request->name, $request->email, $request->msg);
+        Mail::to('jeandedieu.twagirumuhoza@gmail.com')->send($mailable);
 
-     //dd('toto');
-      //die and dump pour tester
+        return 'reussi';
 
-
-      $this->validate($request, [
+      /*$this->validate($request, [
           'name' => 'required|min:3',
           'email' => 'required|email',
           'message' => 'required|min:10',
 
-           ]);
+           ]);*/
       
 
     }

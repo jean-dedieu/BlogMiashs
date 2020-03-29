@@ -14,4 +14,23 @@ class ContactsController extends Controller
 
         return view('layouts.contacts.create');
     }
+
+    public function store(Request $request){
+
+        //store(Request $request)
+
+
+     //dd('toto');
+      //die and dump pour tester
+
+
+      $this->validate($request, [
+          'name' => 'required|min:3',
+          'email' => 'required|email',
+          'message' => 'required|min:10',
+
+           ]);
+      
+
+    }
 }

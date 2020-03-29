@@ -39,16 +39,15 @@ Route::get('/about',[
 
 Route::get('/contact',[
     'as'=> 'contact_path',
-    //por respecter les convention REST
+    //pour respecter les convention REST
     'uses' => 'ContactsController@create'
 ]);
 
 //test email
 Route::get('/test-email',function(){
-//on retourne notre mailable pour afficher le message 
+//on retourne notre mailable pour afficher le message
 return new ContactsMessageCreated;
 });
-   
 
 
 
@@ -56,7 +55,8 @@ return new ContactsMessageCreated;
 
 
 
-   
+
+
 
 
 

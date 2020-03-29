@@ -43,10 +43,16 @@ Route::get('/contact',[
     'uses' => 'ContactsController@create'
 ]);
 
+Route::post('/contact',[
+    'as'=> 'contact_path',
+    //por respecter les convention REST
+    'uses' => 'ContactsController@store'
+]);
+
 //test email
 Route::get('/test-email',function(){
 //on retourne notre mailable pour afficher le message 
-return new ContactsMessageCreated;
+return new ContactsMessageCreated('Jean de Dieu TWAGIRUMUHOZA','jeandedieu.emploi@gmail.com','Merci');
 });
    
 

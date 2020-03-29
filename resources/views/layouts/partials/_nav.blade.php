@@ -18,7 +18,7 @@
             <li><a href="{{ route('about_path') }}">Qui sommes-nous</a></li>
             <li><a href="{{ route('contact_path')}}">Contacts</a></li>
             <!--<li class="menu-text">Le Blog</li>-->
-            <li><a href="http://127.0.0.1:8000/">Home</a></li>
+           <!-- <li><a href="http://127.0.0.1:8000/">Home</a></li>-->
             <li><a href="http://127.0.0.1:8000/articles">Articles</a></li>
             <!--<li><a href="http://127.0.0.1:8000/contact">Contact</a></li>-->
 

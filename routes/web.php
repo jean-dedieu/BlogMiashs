@@ -1,5 +1,5 @@
 <?php
-
+use App\Mail\ContactsMessageCreated;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,6 +42,14 @@ Route::get('/contact',[
     //por respecter les convention REST
     'uses' => 'ContactsController@create'
 ]);
+
+//test email
+Route::get('/test-email',function(){
+//on retourne notre mailable pour afficher le message 
+return new ContactsMessageCreated;
+});
+   
+
 
 
 

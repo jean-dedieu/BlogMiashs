@@ -27,14 +27,20 @@ class ContactsController extends Controller
         $mailable = new ContactsMessageCreated($request->name, $request->email, $request->msg);
         Mail::to('jeandedieu.twagirumuhoza@gmail.com')->send($mailable);
 
-        return 'reussi';
+        //flashy nous permettrad'afficher un message après l'envoi du formulaire
 
-      /*$this->validate($request, [
+        flashy('Message bien envoyé, nous reviendrons vers vous dans les plus brefs délais!');
+
+        //après l'nvoi du formulaire, on redirige le client vers la page d'accueil
+
+        return redirect()->route('root_path');
+
+      $this->validate($request, [
           'name' => 'required|min:3',
           'email' => 'required|email',
           'message' => 'required|min:10',
 
-           ]);*/
+           ]);
       
 
     }

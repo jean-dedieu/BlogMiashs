@@ -51,13 +51,10 @@ Route::post('/contact',[
 
 //test email
 Route::get('/test-email',function(){
-<<<<<<< HEAD
 //on retourne notre mailable pour afficher le message
 return new ContactsMessageCreated;
-=======
 //on retourne notre mailable pour afficher le message 
 return new ContactsMessageCreated('Jean de Dieu TWAGIRUMUHOZA','jeandedieu.emploi@gmail.com','Merci');
->>>>>>> 7406374de24ff1892be6c6f51c6246c488798ad7
 });
 
 

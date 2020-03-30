@@ -4,7 +4,7 @@
     padding: 11px 30px;
     border-radius: 4px;
     font-weight: 400;
-    position: fixed;
+    position: top;
     bottom: 20px;
     right: 20px;
     font-size: 16px;
@@ -89,7 +89,7 @@
         var template = $($("#flashy-template").html());
         $(".flashy").remove();
         template.find(".flashy__body").html(message).attr("href", link || "#").end()
-         .appendTo("body").hide().fadeIn(300).delay(2800).animate({
+         .appendTo("body").hide().fadeIn(300).delay(9000).animate({
             marginRight: "-100%"
         }, 300, "swing", function() {
             $(this).remove();

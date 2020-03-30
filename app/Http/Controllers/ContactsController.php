@@ -26,16 +26,17 @@ class ContactsController extends Controller
 
         //instance de model Message
 
-        $message = new Message;
-        $message->name = $request->name;
+        $message = Message::create($request->only('name','email','message'));
+        /*$message->name = $request->name;
         $message->email = $request->eamail;
         $message->message = $request->message;
-        $message->save();
+        $message->save();*/
 
         //pour envoyer notre mail
         $mailable = new ContactsMessageCreated($message);
         // $mailable = new ContactsMessageCreated($request->name, $request->email, $request->msg
-        Mail::to('jeandedieu.twagirumuhoza@gmail.com')->send($mailable);
+        Mail::to('jeandedieu.twagirumuhoza@gmail.com')
+            ->queue(new ContactsMessageCreated($message));
 
         //flashy nous permettrad'afficher un message après l'envoi du formulaire
 

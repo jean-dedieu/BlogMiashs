@@ -5,8 +5,15 @@
 
 
 <div class="container">
+    <style>
 
-    <div class="row"> 
+       /* .messageBox{
+            height:200px;
+        }
+        */
+    </style>
+
+    <div class="#"> 
       
 
        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1>">
@@ -19,25 +26,28 @@
                 <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
 
                      <label for="name" class="control-label">Nom</label><br>
-                       <input type="text" name="name" id="name" class="form-control" required="required" >
+                       <input type="text" name="name" id="name" class="form-control" required="required" value="{{ old('name')}}">
                        {!! $errors->first('name', '<span class="help-block">:message</span>')!!}
                 </div>
+
                     <div class="form-group">
 
-                       <label for="email" class="control-label">E-mail</label><br>
-                       <input type="email" name="email" id="email" class="form-control" required="required" >
+                       <label for="email" class="control-label">E-mail</label>
+                       <input type="email" name="email" id="email" class="form-control" required="required" value="{{ old('email')}}" >
                        {!! $errors->first('email', '<span class="help-block">:email</span>')!!}
                    </div>
-                      <div class="form-group">
 
-                       <label for="message" class="control-label" sr-only>Votre message</label><br>
-                       <input type="textarea" class="form-control" rows="20" cols="30" name="msg" id="msg" required="required" >
+                      <div class="form-group {{ $errors->has('message') ? 'has-error' : '' }}">
+
+                       <label for="message" class="control-label" sr-only>Votre message</label>
+                       <input type="textarea" class="form-control" rows="10" cols="10" required ="required" name="message" id="message">{{ old('message')}}</textarea>
                        {!! $errors->first('message', '<span class="help-block">:message</span>')!!}
 
                    </div>
+
                    <div class="form-group">
 
-                       <button class="btn btn-success btn-block &raquo;">J'envoi</button>
+                       <button class="btn btn-success btn-block" type="submit">J'envoi &raquo;</button>
 
                       </div>
 

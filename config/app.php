@@ -165,7 +165,10 @@ return [
         /*
          * Package Service Providers...
          */
-
+         
+         
+         //Provider pour flashy de message de confirmation
+         MercurySeries\Flashy\FlashyServiceProvider::class,
         /*
          * Application Service Providers...
          */

@@ -6,11 +6,11 @@
 @component('mail::message')
 # Bonjour Admin
 
-<strong>De: </strong>{{ $name }}<br>
-<strong>Mail:</strong> {{ $email }}
+<strong>De: </strong>{{ $msg->name }}<br>
+<strong>Mail:</strong> {{ $msg->email }}
 
 @component('mail::panel')
-{{ $msg }}
+{{ $msg->message }}
 @endcomponent
 
 Merci,<br>

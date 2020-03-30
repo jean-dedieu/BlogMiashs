@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Mail;
-
+use App\Models\Message;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contacts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -13,8 +13,7 @@ class ContactsMessageCreated extends Mailable
 
     //création de nos variables globales de message
 
-    public $name;
-    public $email;
+ 
     public $msg;
 
     /**
@@ -22,12 +21,10 @@ class ContactsMessageCreated extends Mailable
      *
      * @return void
      */
-    public function __construct($name, $email, $msg)
+    public function __construct(Message $msg)
     {
         //Passage des variables à la vue
 
-        $this->name = $name;
-        $this->email = $email;
         $this->msg = $msg;
     }
 

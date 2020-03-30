@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactsMessageCreated;
+use App\Models\Message;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Support\Facades\Mail;
@@ -23,8 +24,17 @@ class ContactsController extends Controller
           //dd('toto');
          //die and dump pour tester
 
+        //instance de model Message
+
+        $message = new Message;
+        $message->name = $request->name;
+        $message->email = $request->eamail;
+        $message->message = $request->message;
+        $message->save();
+
         //pour envoyer notre mail
-        $mailable = new ContactsMessageCreated($request->name, $request->email, $request->msg);
+        $mailable = new ContactsMessageCreated($message);
+        // $mailable = new ContactsMessageCreated($request->name, $request->email, $request->msg
         Mail::to('jeandedieu.twagirumuhoza@gmail.com')->send($mailable);
 
         //flashy nous permettrad'afficher un message après l'envoi du formulaire

@@ -14,12 +14,12 @@
 
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav">
-            <li><a href="{{ route('root_path') }}">Accueil</a></li>
-            <li><a href="{{ route('about_path') }}">Qui sommes-nous</a></li>
-            <li><a href="{{ route('contact_path')}}">Contacts</a></li>
+            <li class="{{ set_active_route('root_path') }}"><a href="{{ route('root_path') }}">Accueil</a></li>
+            <li class="{{ set_active_route('about_path') }}"><a href="{{ route('about_path') }}">Qui sommes-nous</a></li>
+            <li class="{{ set_active_route('contact_path') }}"><a href="{{ route('contact_path')}}">Contacts</a></li>
             <!--<li class="menu-text">Le Blog</li>-->
            <!-- <li><a href="http://127.0.0.1:8000/">Home</a></li>-->
-            <li><a href="http://127.0.0.1:8000/articles">Articles</a></li>
+            <li class="{{ set_active_route('articles_path') }}"><a href="http://127.0.0.1:8000/articles">Articles</a></li>
             <!--<li><a href="http://127.0.0.1:8000/contact">Contact</a></li>-->
 
 

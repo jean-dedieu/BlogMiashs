@@ -14,7 +14,7 @@
 
         <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav">
-            <li class="active"><a href="{{ route('root_path') }}">Accueil</a></li>
+            <li><a href="{{ route('root_path') }}">Accueil</a></li>
             <li><a href="{{ route('about_path') }}">Qui sommes-nous</a></li>
             <li><a href="{{ route('contact_path')}}">Contacts</a></li>
             <!--<li class="menu-text">Le Blog</li>-->

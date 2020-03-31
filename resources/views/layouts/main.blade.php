@@ -51,7 +51,9 @@
 
     <head>
         <meta charset="utf-8">
-        <title>{{ isset($title) ? $title . '|' : ''}} EchoMiashs</title>
+        <!--si on ici par exemple about on afficher about | EchoMiashs- Blog -->
+        <title>{{ page_title($title ?? '') }}</title>
+        <!--<title>{{ isset($title) ? $title . '|' : ''}} EchoMiashs - Blog</title>-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
        <style>
 

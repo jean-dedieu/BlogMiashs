@@ -13,7 +13,8 @@ class PostsController extends Controller
       
         return view('posts/single',array( //on passe le post à la vue
             'post' => $post,
-            'user'=>$user_name
+            'user'=>$user_name,
+            
             
             
         ));

@@ -1,3 +1,5 @@
+<hr></hr>
+
 <footer class="text-center">
  <footer class="page-footer font-small cyan darken-3">
 <p><b>Blog Par Jean de Dieu TWAGIRUMUHOZA &     Abdoulaye KEITA</b> </p><br>

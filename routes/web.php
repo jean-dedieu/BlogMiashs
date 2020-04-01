@@ -24,7 +24,13 @@ Route::get('/',[
     'uses' => 'HomeController@index'
 ]);
 
-Route::get('articles', 'ArticlesController@article');
+//Route::get('articles', 'ArticlesController@article');
+
+Route::get('/articles',[
+    'as'=> 'articles_path',
+    'uses' => 'ArticlesController@article'
+]);
+
 
 
 Route::get('/articles/{post_name}', 'PostsController@show');

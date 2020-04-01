@@ -58,12 +58,12 @@
        <style>
 
        p,h1,h2{
-
+/*
          font-family:'open-sans', Helvetica,Arial,sans-serif;
          font-size:14px;
          }
 
-         
+         */
        
        </style>
 

@@ -1,7 +1,6 @@
-
+@extends('layouts/main',['title'=>'Articles'])
 <html>
 
-@extends('layouts/main')
 </html>
 <body>
 

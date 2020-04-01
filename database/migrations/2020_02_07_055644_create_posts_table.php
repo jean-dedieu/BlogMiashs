@@ -26,7 +26,9 @@ class CreatePostsTable extends Migration
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
             $table->integer('user_id')->unsigned()->nullable();
-             $table->string('post_author');
+            $table->string('post_author');
+            //$table->binary('image');
+         
 
         });
     }

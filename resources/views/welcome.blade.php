@@ -31,7 +31,7 @@
        <h3><a  href="{{ url('http://127.0.0.1:8000/articles/'.$post->post_name) }}" >{{$post->post_title}} </a><h3>
 
 
-       
+
 
          @endforeach
 </div>
@@ -39,29 +39,29 @@
   <div class="col-sm-2">
     <div class="row">
       <aside class="border-1"><p>
-        
+
       Lorem ipsum dolor sit amet, rdum leo.
 
 Ut inib
 
       </p></aside>
-      <aside class="border-1"><p> Lorem ipsum dolor sit amet, rdum leo.Lorem ipsum dolor sit amet, rdum leo.
+      <aside class="border-1"><p> Lorem ipsum dolor sit amet, rdum leo.Lorem ipsum dolor sit amet.
 
       </p></aside>
     </div>
   </div>
   <section class="col-sm-10 col-md-8">Section</section>
   <div class="clearfix visible-sm"></div>
-  <div class="col-md-2">	
+  <div class="col-md-2">
 
     <div class="row">
-      <aside class="col-md-12"><p>Lorem ipsum dolor sit amet,  quam nibh fringilla lacus, sit amet fermentum ligula massa et justo.</p></aside>
+      <aside class="col-md-12"><p>Lorem ipsum dolor sit amet,  quam nibh fringilla lacus, sit amet fermentu.</p></aside>
       <aside class="col-md-12"><p>Sit amet fermentum ligula massa et justo. massa et justo.</p></aside>
     </div>
   </div>
-</div> 
+</div>
 
 </div>
-    
+
 
 @endsection

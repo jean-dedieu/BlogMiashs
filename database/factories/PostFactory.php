@@ -19,7 +19,8 @@ $factory->define(App\Post::class, function (Faker $faker) {
     return [
        'post_author' => $faker->randomElement($users),
         'post_date' => now(),
-        'post_content' => $faker->paragraph(),
+        'post_content' => $faker->text(3000),
+        //'image' => $faker->image('public/storage/images',640,480),
         'post_title' => $faker->sentence(),
         'post_name' => $faker->word(),
         'post_type' => 'article',

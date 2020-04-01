@@ -12,7 +12,7 @@
         </div>
 
 
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbar" class="navbar navbar-light" style="background-color: #e3f2fd;">
          <ul class="nav navbar-nav">
             <li class="{{ set_active_route('root_path') }}"><a href="{{ route('root_path') }}">Accueil</a></li>
             <li class="{{ set_active_route('about_path') }}"><a href="{{ route('about_path') }}">Qui sommes-nous</a></li>
@@ -31,7 +31,7 @@
                       mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-miashs-program-master-mathematiques-informatique-
                       appliquees-et-sciences-humaines-et-sociales/parcours-double-competence-informatique-et-sciences-sociales-dciss-subprogram-informatique-et
                       -sciences-sociales.html">Master MIASHS</a></li>
-               
+
 
                <!-- <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Autres</li>
@@ -44,7 +44,7 @@
           <ul class="nav navbar-nav navbar-right">
                 <button class="btn btn-default"><li><a href="#">Se connecter</a></li></button>
                 <button class="btn btn-default"><li><a href="#">Devenir membre</a></li></button>
-                
+
                </ul>
         </div><!--/.nav-collapse -->
       </div>

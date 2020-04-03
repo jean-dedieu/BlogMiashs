@@ -1,29 +1,42 @@
 @extends('layouts/main',['title'=>'Articles'])
+
+
 <html>
 
 </html>
-<body>
 
-</body>
+<header>
+
+<style>
+.art{
+    padding:20px;
+    margin-left:40px;
+}
+   
+</style>
+</header>
 
 
 @section('content')
 
-<div class="class=d-flex p-2">
-<ul>
+<h1 class= "text-center text-light bg-dark">A la une</h1>
 
-    <h1 class= "text-center text-light bg-dark">A la une</h1>
-        @foreach ( $posts as $post )
+   <div class="articlees"
+
+    @foreach ( $posts as $post )
 
 
 
-        <li class="list-group-item list-group-item-primary "> <a href="{{ url('http://127.0.0.1:8000/articles/'.$post->post_name) }}" >{{$post->post_title}}</a>
+    <div class="art" ><a href="{{ url('http://127.0.0.1:8000/articles/'.$post->post_name) }}" >{{$post->post_title}}</a></div>
 
-        </li>
 
-        @endforeach
+    @endforeach
 
-</ul>
 </div>
+        
+<body>
+
+
+</body>
 @endsection
 

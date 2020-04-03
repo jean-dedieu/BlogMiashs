@@ -66,6 +66,14 @@ return new ContactsMessageCreated('Jean de Dieu TWAGIRUMUHOZA','jeandedieu.emplo
 
 
 
+Route::get('/welcomeslide', function () {
+    return view('welcomeslide');
+});
+
+
+Route::get('/slideer', function () {
+    return view('slideee.demos.ind');
+});
 
 
 

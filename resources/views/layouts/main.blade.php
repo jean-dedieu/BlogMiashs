@@ -1,5 +1,5 @@
 
-<!--
+<!--footer
   <div class="top-bar">
     <div class="top-bar-left">
       <ul class="menu">
@@ -93,9 +93,11 @@
     <!--pour inclure le navbar dans le contenu de cette page-->
 
     @include('layouts/partials/_nav')
+  
       
     @yield('content')
-
+     
+   
      <!--pour inclure le footer dans le contenu de cette page-->
      <hr></hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
      @include('layouts/partials/_footer')

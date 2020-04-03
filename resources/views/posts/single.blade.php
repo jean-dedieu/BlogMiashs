@@ -11,7 +11,7 @@
 <p class="text-left">{{$post->post_content}}</p>
 
 
-</d>
+</div>
 
 
 @endsection

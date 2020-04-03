@@ -26,8 +26,6 @@ $title='Home';
 
 
 
-
-
     <nav class="navbar navbar-default navbar-static">
       <div class="container">
         <div class="navbar-header">
@@ -110,7 +108,10 @@ $title='Home';
           </div>
         </div>
     </div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
     @include('flashy::message')
+
+
     <div id="example-info">
       <div class="container">
         <div class="row">
@@ -205,9 +206,9 @@ $title='Home';
 
     <script src="js/google-code-prettify/prettify.js"></script>
     <script src="js/application.js"></script>
-
-
     
+
+   
    
     @include('layouts/partials/_footer')
 

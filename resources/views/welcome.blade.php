@@ -21,14 +21,14 @@ $title='Home';
     <link href="owl-carousel/owl.theme.css" rel="stylesheet">
 
     <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
-  
+
 
 
 
 
     <nav class="navbar navbar-default navbar-static">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar navbar-dark bg-dark">
          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -36,8 +36,8 @@ $title='Home';
             <span class="icon-bar"></span>
           </button>-->
           <a class="navbar-brand" href="{{ route('root_path') }}">{{ env('APP_NAME')}}</a>
-          
-          <ul class="nav navbar-nav">
+
+          <ul class="nav navbar-nav ">
           <li class="{{ set_active_route('root_path') }}"><a href="{{ route('root_path') }}">Accueil</a></li>
          <li class="{{ set_active_route('about_path') }}"><a href="{{ route('about_path') }}">Qui sommes-nous</a></li>
          <li class="{{ set_active_route('contact_path') }}"><a href="{{ route('contact_path')}}">Contacts</a></li>
@@ -73,20 +73,20 @@ $title='Home';
         </div>
 
 
-        <div id="" class="navbar-collapse collapse" style="background-color:yellow">
-        
+        <div id=""class="navbar navbar-dark bg-primary>
+
         </div><!--/.nav-collapse -->
       </div>
 </nav>
 
   </head>
   <body>
-   
+
     <div id="title">
       <div class="container">
         <div class="row">
           <div class="span12">
-            
+
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@ $title='Home';
       <div class="container">
         <div class="row">
           <div class="span12">
-            
+
 
               </div>
 
@@ -130,9 +130,9 @@ $title='Home';
     <div id="more">
       <div class="container">
 
-        
-      
-          
+
+
+
 <div class="col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1>">
 
 <h2  class="btnarticles">  Vous trouverez ici les 3 derniers articles  publiés&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp</h2>
@@ -154,18 +154,18 @@ $title='Home';
 </div>
 
 </div>
-        
+
 
         </div>
-      
+
         </div>
       </div>
     </div>
 
-    
 
 
-    <script src="js/jquery-1.9.1.min.js"></script> 
+
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="owl-carousel/owl.carousel.js"></script>
 
 
@@ -190,7 +190,7 @@ $title='Home';
       singleItem : true
 
       // "singleItem:true" is a shortcut for:
-      // items : 1, 
+      // items : 1,
       // itemsDesktop : false,
       // itemsDesktopSmall : false,
       // itemsTablet: false,
@@ -206,10 +206,10 @@ $title='Home';
 
     <script src="js/google-code-prettify/prettify.js"></script>
     <script src="js/application.js"></script>
-    
 
-   
-   
+
+
+
     @include('layouts/partials/_footer')
 
   </body>

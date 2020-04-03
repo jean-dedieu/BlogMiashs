@@ -10,16 +10,19 @@
 <style>
 .art{
     padding:20px;
-    margin-left:40px;
+    margin-left:20px;
+    text-align: center;
+    color: #00ff00;
+
 }
-   
+
 </style>
 </header>
 
 
 @section('content')
 
-<h1 class= "text-center text-light bg-dark">A la une</h1>
+<h1 class= "text-center text-light bg-dark">A la une de l'actualité d'aujourd'hui</h1>
 
    <div class="articlees"
 
@@ -33,7 +36,7 @@
     @endforeach
 
 </div>
-        
+
 <body>
 
 

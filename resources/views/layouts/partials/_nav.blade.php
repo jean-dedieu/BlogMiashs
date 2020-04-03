@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
           </button>-->
           <a class="navbar-brand" href="{{ route('root_path') }}">{{ env('APP_NAME')}}</a>
-          
+
           <ul class="nav navbar-nav">
           <li class="{{ set_active_route('root_path') }}"><a href="{{ route('root_path') }}">Accueil</a></li>
          <li class="{{ set_active_route('about_path') }}"><a href="{{ route('about_path') }}">Qui sommes-nous</a></li>
@@ -46,8 +46,8 @@
         </div>
 
 
-        <div id="" class="navbar-collapse collapse" style="background-color:yellow">
-        
+        <div id="" class="navbar-collapse collapse" style="background-color: 99FFFF;">
+
         </div><!--/.nav-collapse -->
       </div>
 </nav>

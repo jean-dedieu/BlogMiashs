@@ -73,7 +73,7 @@ $title='Home';
         </div>
 
 
-        <div id=""class="navbar navbar-dark bg-primary>
+        <div id=""class="navbar navbar-dark bg-primary">
 
         </div><!--/.nav-collapse -->
       </div>

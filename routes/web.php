@@ -81,8 +81,12 @@ Route::get('/login', function () {
     return view('auth.login');
 });
 
+Route::get('/home', function () {
+    return view('home');
+});
 
 
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index');
+//->name('home');

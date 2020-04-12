@@ -25,7 +25,7 @@ class HomeController extends Controller
   
 
     /**
-     * Show the application dashboard.
+     * affiche les 3 derniers articles publiés
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */

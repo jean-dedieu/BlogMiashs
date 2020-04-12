@@ -24,7 +24,7 @@
 
 <h1 class= "text-center text-light bg-dark">A la une de l'actualité d'aujourd'hui</h1>
 
-   <div class="articlees"
+   <div class="articlees">
 
     @foreach ( $posts as $post )
 

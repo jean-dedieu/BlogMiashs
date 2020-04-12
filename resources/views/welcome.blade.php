@@ -28,7 +28,7 @@ $title='Home';
 
     <nav class="navbar navbar-default navbar-static">
       <div class="container">
-        <div class="navbar navbar-dark bg-dark">
+        <div class="">
          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -57,19 +57,43 @@ $title='Home';
                    -sciences-sociales.html">Master MIASHS</a></li>
 
 
-            <!-- <li role="separator" class="divider"></li>
-             <li class="dropdown-header">Autres</li>
-             <li><a href="#">Autres</a></li>
-             <li><a href="#">Autres</a></li>-->
+           
            </ul>
          </li>
        </ul>
 
-       <ul class="nav navbar-nav navbar-right">
-             <button class="sign"><li><a href="#">Se connecter</a></li></button>
-             <button class="sign"><li><a href="#">Devenir membre</a></li></button>
+    
+         <ul class="nav navbar-nav navbar-right">
+       @guest
+         <li class="nav-item">
+             <a class="nav-link" href="{{ route('login') }}">Se connecter</a>
+             </li>
+
+             <li class="nav-item">
+             <a class="nav-link" href="{{ route('register') }}">Devenir membre</a>
+             </li>
+             @else
+             <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+             @endguest
 
             </ul>
+     
         </div>
 
 
@@ -112,22 +136,9 @@ $title='Home';
     @include('flashy::message')
 
 
-    <div id="example-info">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
+  
 
 
-              </div>
-
-            </div><!--End Tab Content-->
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="more">
       <div class="container">
 
 
@@ -138,23 +149,6 @@ $title='Home';
 <h2  class="btnarticles">  Vous trouverez ici les 3 derniers articles  publiés&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp</h2>
 
 </div>
-
-
-
-<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1>">
-
-
-    <div class="text-center">
-
-         @foreach ( $posts as $post )
-
-       <h3><a  href="{{ url('http://127.0.0.1:8000/articles/'.$post->post_name) }}" >{{$post->post_title}} </a><h3>
-
-         @endforeach
-</div>
-
-</div>
-
 
         </div>
 

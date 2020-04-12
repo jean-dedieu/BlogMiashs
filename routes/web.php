@@ -59,7 +59,7 @@ Route::post('/contact',[
 Route::get('/test-email',function(){
 //on retourne notre mailable pour afficher le message
 return new ContactsMessageCreated;
-//on retourne notre mailable pour afficher le message 
+//on retourne notre mailable pour afficher le message
 return new ContactsMessageCreated('Jean de Dieu TWAGIRUMUHOZA','jeandedieu.emploi@gmail.com','Merci');
 });
 
@@ -76,6 +76,10 @@ Route::get('/slideer', function () {
 });
 
 
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
 
 
 

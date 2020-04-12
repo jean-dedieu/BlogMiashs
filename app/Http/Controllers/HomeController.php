@@ -31,6 +31,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        $troisPosts = \App\Post::orderBy('post_date', 'desc')->take(3)->get();
+        return view('welcome',array(
+            'posts' => $troisPosts
+        ));
     }
 }

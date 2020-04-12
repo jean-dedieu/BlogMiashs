@@ -20,6 +20,11 @@ class RedirectIfAuthenticated
     {
         if (Auth::guard($guard)->check()) {
            // return redirect(RouteServiceProvider::HOME);
+
+           /*si un utilisateur est connecté, on le rediregera directement à la page d'accueil
+           * aucune raison de vouloir se connecter quand on est connecté
+           */
+           return redirect('/');
         }
 
         return $next($request);

@@ -45,13 +45,13 @@ Route::get('/about',[
 
 Route::get('/contact',[
     'as'=> 'contact_path',
-    //pour respecter les convention REST
+    //pour respecter les conventions REST
     'uses' => 'ContactsController@create'
 ]);
 
 Route::post('/contact',[
     'as'=> 'contact_path',
-    //por respecter les convention REST
+    //por respecter les conventions REST
     'uses' => 'ContactsController@store'
 ]);
 
@@ -96,4 +96,6 @@ Auth::routes();
 Route::get('/home', function () {
     return view('home');
 });*/
+
+Route::post('/comment/{id}', 'PostsController@comment');
 

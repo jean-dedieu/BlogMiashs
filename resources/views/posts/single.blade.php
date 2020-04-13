@@ -12,6 +12,19 @@
 
 
 </div>
+<hr>
+<!--formulaire de commentaire pour un article-->
+<form method="POST" action='{{url("/comment/{post->post_id}")}}'>
+{{csrf_field()}}
+
+  <div class="form-group">
+     <textarea id="comment"  rows="6" cols="6" class="form-control" name="comment" required autofocus>
+     </textarea>
+  </div>
+  <div class="form-group">
+   <button type="submit" class="btn btn-success btn-lg  btn-block"> Envoyer mon commentaire</button>
+  </div>
+</form>
 
 
 @endsection

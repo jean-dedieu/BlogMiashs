@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+<<<<<<< HEAD
 <div class="text-center">
 
 @foreach ( $posts as $post )
@@ -8,3 +9,9 @@
 
 @endforeach
 </div>
+=======
+@extends('views.welcome')
+
+      
+ 
+>>>>>>> menu

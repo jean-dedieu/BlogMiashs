@@ -87,3 +87,15 @@ Route::get('/login', function () {
 
 Auth::routes();
 
+<<<<<<< HEAD
+=======
+
+//Route::get('/home', 'HomeController@index');
+//->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+/*
+Route::get('/home', function () {
+    return view('home');
+});*/
+
+>>>>>>> 2b7d299525a018bb3565732b9528841d42819005

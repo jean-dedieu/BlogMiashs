@@ -1,38 +1,4 @@
 
-<!--footer
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="menu">
-        <li class="menu-text">Le Blog</li>
-        <li><a href="http://127.0.0.1:8000/">Home</a></li>
-        <li><a href="http://127.0.0.1:8000/articles">Articles</a></li>
-        <li><a href="http://127.0.0.1:8000/contact">Contact</a></li>
-        
-      </ul>
-    </div>
-  </div>
-
-  <div class="callout large primary">
-    <div class="row column text-center">
-      <h1 style =color:#04a> JEANDE DE DIEU ET ABDOULAYE</h1>
-      <h2 class="subheader"></h2>
-    </div>
-  </div>
-
-  <div class="row medium-8 large-7 columns">
- @yield('content')
-  </div>
-
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-
-
-
-
--->
 
 </body>
 
@@ -55,17 +21,7 @@
         <title>{{ page_title($title ?? '') }}</title>
         <!--<title>{{ isset($title) ? $title . '|' : ''}} EchoMiashs - Blog</title>-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       <style>
-
-       p,h1,h2{
-/*
-         font-family:'open-sans', Helvetica,Arial,sans-serif;
-         font-size:14px;
-         }
-
-         */
-       
-       </style>
+    
 
 
         <title>Blog</title>

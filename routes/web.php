@@ -88,13 +88,12 @@ Route::get('/home', function () {
 
 Auth::routes();
 
-<<<<<<< HEAD
+
 //Route::get('/home', 'HomeController@index');
 //->name('home');
-=======
 //Route::get('/home', 'HomeController@index')->name('home');
-
+/*
 Route::get('/home', function () {
     return view('home');
-});
->>>>>>> menu
+});*/
+

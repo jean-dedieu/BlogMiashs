@@ -41,7 +41,7 @@ Route::get('contact', 'EmailController@getForm');*/
 Route::get('/about',[
     'as'=> 'about_path',
     'uses' => 'PagesController@about'
-])->middleware('auth');
+]);
 
 Route::get('/contact',[
     'as'=> 'contact_path',

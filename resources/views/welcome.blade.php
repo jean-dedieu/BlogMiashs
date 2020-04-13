@@ -81,7 +81,7 @@ $title='Home';
 </div>
 
 <div class="text-center">
-<<<<<<< HEAD
+
 
 @foreach ( $posts as $post )
 
@@ -90,8 +90,7 @@ $title='Home';
 @endforeach
 </div>
         </div>
-=======
->>>>>>> menu
+
 
 @foreach ( $posts as $post )
 

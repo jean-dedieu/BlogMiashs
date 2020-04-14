@@ -12,19 +12,26 @@
 
 
 </div>
+@
 <hr>
-<!--formulaire de commentaire pour un article-->
-<form method="POST" action='{{url("/comment/{post->post_id}")}}'>
+<hr>
+<!--formulaire de commentaire pour un article // method="POST" à ajouter plus tard-->
+<form class="mt-3" method="POST" action='{{url("/{post->path}/comments")}}'>
 {{csrf_field()}}
 
   <div class="form-group">
-     <textarea id="comment"  rows="6" cols="6" class="form-control" name="comment" required autofocus>
+     <textarea id=""  placeholder="votre commentaire ici..." rows="6" cols="6" class="form-control" name="body" required autofocus>
+         {{ old('body')}}
      </textarea>
   </div>
-  <div class="form-group">
+ 
    <button type="submit" class="btn btn-success btn-lg  btn-block"> Envoyer mon commentaire</button>
-  </div>
+ 
 </form>
+
+  <!--{<div class="card">
+   
+</div>-->
 
 
 @endsection

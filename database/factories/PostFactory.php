@@ -24,5 +24,6 @@ $factory->define(App\Post::class, function (Faker $faker) {
         'post_title' => $faker->sentence(),
         'post_name' => $faker->word(),
         'post_type' => 'article',
+        //'post_comments' => $faker->randomElement($comments),
     ];
 });

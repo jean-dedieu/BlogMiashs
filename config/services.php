@@ -26,8 +26,14 @@ return [
 
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
-        'secret' => env('AWS_SECRET_ACCESS_KEY'),
+        'secret' => '7c5679909360cb5d197f8ce68f2eef60',
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+    ],
+    //socialite authentification via facebook
+    'facebook' => [
+        'client_id' => '2592623071064811',
+        'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'redirect' => 'http://localhost:8000/facebook/login/callback',
     ],
 
 ];

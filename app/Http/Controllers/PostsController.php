@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Comment;
-use App\Comments;
+use App\Http\Controllers\Comments;
 use App\Auth;
 
 class PostsController extends Controller
@@ -24,10 +23,10 @@ class PostsController extends Controller
      }
 
      
-     //pour envoi de commentaire
+     /*pour envoi de commentaire
 
-     public function comment($post_id){
-            /* Request $request, 
+     public function comment(Request $request, $post_name){
+          
              $this->validate($request,[
              'comment' => 'required'
              ]);
@@ -35,15 +34,15 @@ class PostsController extends Controller
 
              $comment = new comment;
              $comment->user_id = Auth::user()->id;
-             $comment->post_id = $post_id;
+             $comment->post_name = $post_name;
              $comment->comment = $request->input('comment');
              $comment->save();
 
-             //return redirect("/articles/{$post_name}")->with('response','votre commentaire a été ajouté avec succès');
-*/
+             return redirect("/articles/{$post_name}")->with('response','votre commentaire a été ajouté avec succès');
 
-        return $post_id;
 
-     }
+        return $post_name;
+
+     }*/
    
 }

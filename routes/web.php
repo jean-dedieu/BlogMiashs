@@ -97,5 +97,17 @@ Route::get('/home', function () {
     return view('home');
 });*/
 
-Route::post('/comment/{id}', 'PostsController@comment');
+Route::post('{post}/comments/', 'CommentsController@store');
 
+//routes pour socialite
+
+Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
+Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+
+//route pour acceder à la liste des utilisateurs
+
+
+Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
+    Route::resource('users', 'UsersController');
+
+});

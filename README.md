@@ -4,8 +4,9 @@ Développé par Jean de Dieu et Abdoulaye
 
 Cette partie est un guide qui permet d’installer notre application en local sur un ordinateur 
 disposant des prérequis Laravel. 
-
-Prerequis
+---
+#PREREQUIS
+---
 
 Pour installer notre projet vous devez disposer au minimum PHP 7.2.5 car nous 
 l’avons développé avec Laravel 7.0, nous devons préciser que Laravel 6.2 

@@ -1,6 +1,7 @@
-# BlogMiashs 
+# EchoMiashs Laravel Blog Project
 Développé par Jean de Dieu TWAGIRUMUHOZA et Abdoulaye KEITA
 --
+** Laravel 7.0 **
 For academic use only
 --
 About

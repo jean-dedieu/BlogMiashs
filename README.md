@@ -220,8 +220,9 @@ Nota bene: L’utilisateur n’aura pas l’accès au panel d’administration, 
 qu'utilisateur et essayez d'accéder à la page http://localhost:8000/admin/users. Vous n’avez pas droit.
 
    Utilisateur1:
-                             Email: utilisateur@utilisateur1.com
-                             Password: password
+              Email: utilisateur@utilisateur1.com
+             
+                     Password: password
 
 
 Fonctionnalité 3. Rôles des utilisateurs
@@ -295,7 +296,7 @@ Fonctionnalité 6. Les files d’attentes ou les OUEUES
 
 Pourquoi? :
 ---
-En Tant que fuutur développeurs des application web et web mobile en  Laravel, plus tard on pourra 
+En Tant que futur développeurs des applications web et web mobile en  Laravel, on pourra 
 résoudre des erreurs par exemple si le client n'arrive pas à recevoir
  un mail pour activer son compte. Dans ce cas nous ferons par exemple:  
    php artisan queue:failed pour voir des activité en file d’attente qui ont échouées et faire 

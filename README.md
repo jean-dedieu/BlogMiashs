@@ -13,7 +13,7 @@ Installation
 Cette partie est un guide qui permet d’installer notre application en local sur un ordinateur 
 disposant des prérequis Laravel. 
 ---
-REREQUIS
+Environment prerequisites
 ---
 
 Pour installer notre projet vous devez disposer au minimum PHP 7.2.5 car nous 

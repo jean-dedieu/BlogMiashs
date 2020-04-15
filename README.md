@@ -159,7 +159,7 @@ FONCTIONNALITÉS DE L’APPLICATION(après TP2) ET MOYENS DE
 
 Fonctionnalité 1. Authentification et droits d’accès au pages
     
-                            Explications: Vous n’aurez le droit de visiter la page d’accueil,articles,contacts qu’une fois connecté, en tant que visiteur non connecté, vous n’avez pas le droit de visiter la page d’accueil et articles car elle contiennent des articles d’actualités réservées à nos membres. Vous ne pourrez pas non plus nous envoyer un message car le middleware ‘auth’ protège l’accès à cette page également. 
+                           <p> Explications: Vous n’aurez le droit de visiter la page d’accueil,articles,contacts qu’une fois connecté, en tant que visiteur non connecté, vous n’avez pas le droit de visiter la page d’accueil et articles car elle contiennent des articles d’actualités réservées à nos membres. Vous ne pourrez pas non plus nous envoyer un message car le middleware ‘auth’ protège l’accès à cette page également. </p>
 
                            Comment tester?: Veuillez cliquer sur les boutons de navigation, vous n’aurez pas droit au pages protégées. Ensuite veuillez vous enregistrer(bouton Devenir membre) et puis vous connecter(bouton se connecter), vous serez directement redirigé vers la page Accueil et vous aurez le droit d’accéder à toutes les pages. Veuillez constater également que vous pouvez vous déconnecter depuis n’importe quel page de l’application.
 

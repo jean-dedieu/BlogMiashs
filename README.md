@@ -38,7 +38,11 @@ Etape 3. Npm install
 ---
 Etape 4. Fichier .env
 ---
- Faire: cp .env.example .env ou copy .env.example .env (pour windows)
+---
+ Faire:
+ ---
+ 
+ cp .env.example .env ou copy .env.example .env (pour windows)
     
 Maintenant avant de passer à l’étape suivante, vous allez configurer le fichier 
 d’environnement(.env). Vous trouverez sans doute cette étape longue, ne vous inquiétez pas, c’est normal.
@@ -50,7 +54,7 @@ et précisez le serveur DB_CONNECTION=sqlite et d’autres configurations suivan
 votre environnement de serveur, comme ports etc, notre application est par défaut sur le port 3306
  de MySQL et en localhost(127.0.0.1) pour apache.
       
-#Dans .env APP_NAME =Laravel, veuillez remplacer Laravel Par EchoMiashs
+Dans .env APP_NAME =Laravel, veuillez remplacer Laravel Par EchoMiashs
 #Veuillez ajouter database dans la variable QUEUE_DRIVER  (QUEUE_DRIVER = database)
 Pour pouvoir tester les fonctionnalités de notre application en matière d’envoi des mails,
  vous allez continuer la configuration du fichier .env pour ajouter des données mailtrap: 

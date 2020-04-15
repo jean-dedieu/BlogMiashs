@@ -30,7 +30,7 @@ $title='Home';
 
 
 
-   
+
 
   </head>
   <body>
@@ -66,7 +66,7 @@ $title='Home';
     @include('flashy::message')
 
 
-  
+
 
 
       <div class="container">
@@ -89,8 +89,8 @@ $title='Home';
 
 @endforeach
 </div>
-       
-  
+
+
 
 
 
@@ -98,9 +98,9 @@ $title='Home';
     <script src="owl-carousel/owl.carousel.js"></script>
 
 
-  
 
-    
+
+
 
 
     <script>
@@ -133,7 +133,7 @@ $title='Home';
 
 
 
-   
+
 
   </body>
 </html>

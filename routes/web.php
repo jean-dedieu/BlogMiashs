@@ -22,18 +22,18 @@ Route::get('/', function () {
 Route::get('/',[
     'as'=> 'root_path',
     'uses' => 'HomeController@index'
-]);
+])->middleware('auth');
 
 //Route::get('articles', 'ArticlesController@article');
 
 Route::get('/articles',[
     'as'=> 'articles_path',
     'uses' => 'ArticlesController@article'
-]);
+])->middleware('auth');
 
 
 
-Route::get('/articles/{post_name}', 'PostsController@show');
+Route::get('/articles/{post_name}', 'PostsController@show')->middleware('auth');
 /*Route::post('contact', ['uses' => 'EmailController@postForm', 'as' => 'storeEmail']);
 Route::get('contact', 'EmailController@getForm');*/
 
@@ -47,13 +47,17 @@ Route::get('/contact',[
     'as'=> 'contact_path',
     //pour respecter les conventions REST
     'uses' => 'ContactsController@create'
-]);
+])->middleware('auth');
 
 Route::post('/contact',[
     'as'=> 'contact_path',
+
     //por respecter les conventions REST
+
+    //pour respecter les convention REST
+
     'uses' => 'ContactsController@store'
-]);
+])->middleware('auth');
 
 //test email
 Route::get('/test-email',function(){
@@ -73,7 +77,7 @@ Route::get('/welcomeslide', function () {
 
 Route::get('/slideer', function () {
     return view('slideee.demos.ind');
-});
+})->middleware('auth');
 
 
 
@@ -81,21 +85,20 @@ Route::get('/login', function () {
     return view('auth.login');
 });
 
-Route::get('/home', function () {
+/*Route::get('/home', function () {
     return view('home');
-});
-
+})*/
 
 Auth::routes();
 
 
-//Route::get('/home', 'HomeController@index');
-//->name('home');
-//Route::get('/home', 'HomeController@index')->name('home');
-/*
-Route::get('/home', function () {
-    return view('home');
-});*/
+
+/*Route::get('/home', 'HomeController@index');
+->name('home');
+Route::get('/home', 'HomeController@index')->name('home');*/
+
+
+
 
 Route::post('{post}/comments/', 'CommentsController@store');
 

@@ -119,7 +119,7 @@ Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallba
 //route pour acceder à la liste des utilisateurs
 
 
-Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
+Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
     Route::resource('users', 'UsersController');
 
 });

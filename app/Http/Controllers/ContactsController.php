@@ -35,7 +35,7 @@ class ContactsController extends Controller
         //pour envoyer notre mail
         $mailable = new ContactsMessageCreated($message);
         // $mailable = new ContactsMessageCreated($request->name, $request->email, $request->msg
-        Mail::to('jeandedieu.twagirumuhoza@gmail.com')
+        Mail::to('keita4715@gmail.com')
             ->queue(new ContactsMessageCreated($message));
 
         //flashy nous permettrad'afficher un message après l'envoi du formulaire
@@ -52,7 +52,7 @@ class ContactsController extends Controller
           'message' => 'required|min:10',
 
            ]);
-      
+
 
     }
 }

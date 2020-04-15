@@ -43,7 +43,7 @@ class User extends Authenticatable
    }
 
 
-   //pour la gestion des commentaires d'un utilisateur``
+   //pour la gestion des commentaires d'un utilisateur
 
    public function comments(){
 
@@ -54,4 +54,14 @@ class User extends Authenticatable
 public function roles(){
     return $this->belongsToMany('App\Role');
 }
+
+public function isAdmin(){
+      //pour vérifier si l'utilisateur est admin
+    return $this->roles()->where('name', 'admin')->first();
+}
+
+public function hasAnyRole(array $roles){
+    return $this->roles()->whereIn('name',$roles)->first();
+}
+
 }

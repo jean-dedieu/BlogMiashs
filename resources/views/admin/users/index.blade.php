@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+@include('layouts/partials/_nav')
 <div class="container">
   <h2>Liste des utilisateurs</h2>
  <!-- <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>-->            
@@ -21,6 +21,7 @@
       <tr>
         <th scope="col">Nom</th>
         <th scope="col">Email</th>
+        <th scope="col">Role</th>
         <th scope="col">Actions</th>
         
       </tr>
@@ -33,9 +34,21 @@
         <th scope="row">  {{ $user->id}}</th>
         <td>{{ $user->name}}</td>
         <td>{{ $user->email}}</td>
+        <td>{{ implode(',',$user->roles()->pluck('name')->toArray())}}</td>
+        @can('edit-users')
         <td>
-            <a href=""><button class="btn btn-info">Editer</button></a>
-            <a href=""><button class="btn btn-danger">Supprimer</button></a>
+            <a href="{{ route('admin.users.edit', $user->id)}}"><button class="btn btn-info">Editer</button></a>
+            @endcan
+            @can('delete-users')
+           
+            <form action="{{ route('admin.users.destroy', $user->id)}}" method="POST" class="d-inline">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger">Supprimer</button>
+
+            </form>
+            @endcan
+            
         </td>
       </tr>
       @endforeach
@@ -49,7 +62,7 @@
 
 
 
-<div class="container">
+<!--div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -65,6 +78,6 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 

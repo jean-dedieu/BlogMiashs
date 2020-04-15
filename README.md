@@ -3,7 +3,12 @@ Développé par Jean de Dieu TWAGIRUMUHOZA et Abdoulaye KEITA
 --
 For academic use only
 --
-#INSTALLER LE PROJET
+About
+---
+On veut créer un blog qui publiera l’actualité. Avec nos connaissances de base dans le framework de développement des applications web qu’est Laravel, nous avons suivi les consignes données par notre professeur M. Rodriguez sous forme d’un cahier des charges pour développer ce blog en Laravel. Ce dernier utilise le template blade et les technologies de front-end que sont HTML/CSS et Javascript/Jquery et le gestionnaire des dépendances composer. Voici les informations dont on dispose: Chaque article(post) est écrit par un User(Auteur), un Auteur peut publier un ou plusieur articles. Un article peut avoir un ou plusieurs commentaire. La page d’accueil affichera dynamiquement les titres des trois(3) derniers articles publiés. Lorsqu'un visiteur du blog cliquera sur le titre d’un article, il sera envoyé sur la page qui affiche le contenu de l’article en entier .. Les articles et les Users sont créés avec les Factory qui permet de générer des données fictifs ensuite on créera les seed pour remplir notre base de données . La base de données utilise le SQLite, le SQLite est le choix plus adapté pour des projets destiné à être testé en local car le fichier de base des données est stocké dans l’application avec l’extension .sqlite.
+
+Installation
+---
 
 Cette partie est un guide qui permet d’installer notre application en local sur un ordinateur 
 disposant des prérequis Laravel. 

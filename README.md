@@ -5,7 +5,7 @@ Développé par Jean de Dieu et Abdoulaye
 Cette partie est un guide qui permet d’installer notre application en local sur un ordinateur 
 disposant des prérequis Laravel. 
 ---
-#PREREQUIS
+REREQUIS
 ---
 
 Pour installer notre projet vous devez disposer au minimum PHP 7.2.5 car nous 
@@ -15,23 +15,29 @@ l'authentification (php artisan make:auth), dès lors nous avons procédé à
 la migration de notre projet vers Laravel 7.0. 
 Assurez-vous d’avoir également Node Js qui sera indispensable pour l’installation des packages json. 
 Pour installer ce projet, vous aurez également besoin de git sur votre machine.
-
-#Pour installer ce projet, veuillez suivre l’ensemble des étapes ci-dessous:
-    
-##Etape 1. Cloner notre projet
+---
+Pour installer ce projet, veuillez suivre l’ensemble des étapes ci-dessous:
+---
+ ---   
+Etape 1. Cloner notre projet
+---
 
     Faites git clone +lien de notre projet (https://github.com/JEANDEDIEUTWAGIRUMUHOZA/BlogMiashs.git)
 
-##Etape 2. Composer install
+---
+Etape 2. Composer install
+---
 
       Faire composer install
 
-##Etape 3. Npm install
+---
+Etape 3. Npm install
+---
 
      Faire npm install
-
-##Etape 4. Fichier .env
-
+---
+Etape 4. Fichier .env
+---
  Faire: cp .env.example .env ou copy .env.example .env (pour windows)
     
 Maintenant avant de passer à l’étape suivante, vous allez configurer le fichier 
